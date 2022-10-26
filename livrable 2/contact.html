@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/style.css">
+    <title>contact</title>
+</head>
+<body>
+    <nav>
+        <p>&nbsp; すし.</p>
+        <ol>
+            <li><a href="index.html"><i class="fa fa-home"></i><span class="link"> Home</span></a></li>
+            <li><a href="about.html"><i class="fa fa-address-book-o"></i><span class="link"> A propos</span></a></li>
+            <li><a href="carte.html"><i class="fa fa-shopping-cart"></i><span class="link"> Plats</span></a></li>
+            <li><a href="contact.html"><i class='fa fa-paper-plane-o'></i><span class="link"> Contact</span></a></li>
+        </ol>
+    </nav>
+    <main>
+        <div id="contact">
+            <div class="fields">
+                <p id="par">Contact Us</p>
+                <div class="form">
+                    <label for="nom">Nom :</label><br>
+                    <input type="text" id="nom" placeholder=" Nom"><br>
+                </div>
+                <div class="form">
+                    <label for="prenom">Prenom :</label><br>
+                    <input type="text" id="prenom" placeholder=" Prenom"><br>
+                </div>
+                <div class="form">
+                    <label for="email">Email :</label><br>
+                    <input type="email" id="email" placeholder=" Exemple@gmail.Com"><br>
+                </div>
+                <div class="form">
+                    <label for="email">Phone :</label><br>
+                    <input type="email" id="Phone" placeholder=" EX:0639872239"><br>
+                </div>
+                <div class="form">
+                    <label for="msg">Message :</label><br>
+                    <textarea id="msg" placeholder=" your message" rows="6"></textarea><br>
+                </div>
+                <div class="form">
+                    <button type="button" id="submit">Submit</button>
+                </div>
+                <div id="feed_back"></div>
+            </div>
+            <div class="icon">
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=tokyo%20sushi&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">google embed maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer_content">
+                <div class="foot_about">
+                    <p class="footer_titre">ABOUT :</p>
+                    <p class="footer_txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis itaque quas alias dolorem officia autem, officiis ullam totam eaque maxime consectetur, veniam deserunt sint! Ratione rerum autem ut natus dolorem!</p>
+                </div>
+                <div class="foot_links">
+                    <p>LINKS :</p>
+                    <ol>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">carte</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ol>
+                    
+                </div>
+                <div class="foot_social">
+                    <p>SOCIAL MEDIA :</p>
+                    <ol>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class='fa fa-instagram'></i></a></li>
+                        <li><a href="#"><i class='fa fa-google'></i></a></li>
+                        <li><a href="#"><i class='fa fa-github'></i></a></li>
+                    </ol>
+                </div>
+    
+            </div> 
+            <p class="copy">Copyright © 2022 Sushi. All rights reserved.</p>
+        </footer>
+    </main>
+    <script>
+        let nom=document.getElementById("nom");
+        let prenom=document.getElementById("prenom");
+        let phone=document.getElementById("Phone");
+        let email=document.getElementById("email");
+        let msg=document.getElementById("msg");
+        submit=document.getElementById("submit");
+        var feed_back=document.getElementById("feed_back");
+        feed_back.style.display="none";
+        submit.addEventListener('click',function(){
+            feed_back.style.display="block";
+            if(nom.value=="" || prenom.value=="" || phone.value=="" || email.value=="" || msg.value==""){
+                feed_back.innerText="Oops! Il faut saisir tous les champs";
+                feed_back.classList.remove("valid"); 
+                feed_back.classList.add("non_valide"); 
+            }
+            else{
+                feed_back.classList.remove("non_valide"); 
+                feed_back.classList.add("valid"); 
+                feed_back.innerText="Merci pour votre feed-back";
+                nom.value="";
+                prenom.value="";
+                phone.value="";
+                email.value="";
+                msg.value="";
+            }
+        });
+    </script>
+</body>
+</html>

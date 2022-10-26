@@ -1,0 +1,665 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body
+{
+    font-family: "Old Japanese", sans-serif;
+    scroll-behavior: smooth;
+    height: 100%;
+    background-color: #ffffff;
+}
+body{
+    display: grid;
+    grid-template-columns: 15% 1fr;
+}
+nav{
+    grid-column: 1;
+    min-width: 15%;
+    min-height: 100vh;
+    background-color: #ffffff;
+    position: fixed;
+    grid-template-rows: repeat(10,1fr);
+    box-shadow: 8px 3px 13px -1px rgba(0,0,0,0.23);
+}
+nav p{
+    grid-row: 1;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    color: rgba(255,124,124);
+    font-size: large;
+    font-weight: bold;
+    font-family: "Old Japanese", sans-serif;
+}
+nav ol li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+nav ol li {
+    list-style: none;
+    margin: 10%;
+    min-width: max-content;
+    min-height: 7vh;
+}
+nav ol li :hover{
+    color: rgba(255,124,124);
+}
+nav ol{
+    position: absolute;
+    top: 25%;
+    left: 8%;
+}
+main {
+    grid-column:2;
+    display: grid;
+}
+.div1{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.div1 .content .text{
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.lien .reservation{
+    width: max-content;
+    border: 1px solid rgba(255,124,124);
+    border-radius: 10px;
+    background-color: rgba(255,124,124);
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.lien .how{
+    color:rgba(255,124,124);
+    cursor: pointer;
+}
+#bio{
+    margin-top: 8%;
+    font-weight: normal;
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 50px;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+main #logo{
+    border: solid rgba(255,124,124) 2px;
+    font-family: "Old Japanese", sans-serif;
+    border-radius:  100px;
+}
+main div p span {
+    color: rgba(255,124,124);
+    font-family: "Old Japanese", sans-serif;
+}
+main .social{
+    margin-top: 40px;
+}
+main #bio .social ol li{
+    list-style: none;
+    display: inline-block;
+}
+main #bio .social ol li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    border :rgb(0, 0, 0) solid 1px;
+    padding: 10px;
+    border-radius:100px ;
+} 
+main #bio .social ol li :hover{
+    background-color:rgba(255,124,124,0.5);
+    color: black;
+} 
+main #bio button {
+    cursor: pointer;
+    background-color: Transparent;
+    border:solid 2px rgba(255,124,124,0.5);
+    border-radius: 6px;
+    color: rgba(255,124,124);
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+main #bio button:hover{
+    background-color: rgba(255,124,124,0.5);
+    color: white;
+}
+
+/*top product*/
+#top_title{
+    color: rgba(255,124,124);
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#top_plat{
+margin-bottom: 150px;
+}
+main #top_plat .slider {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+#partenaire .partenariat{
+    display: flex;
+    justify-content: space-around;
+}
+#partenaire #parten_title{
+    color: rgba(255,124,124);
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+#partenaire .partenariat div p{
+    color: black;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+main #service .services div :nth-child(1){
+    color: black;
+    font-size: 16px;
+    text-align: justify;
+    padding-left:8% ;
+    padding-right:8%;
+}
+main #service div #serv_title{
+    display: grid;
+    grid-template-rows: 20%;
+    color: rgba(255,124,124,0.5);
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+main #service .services {
+    display: flex;
+    justify-content: space-around;
+}
+main  #service .services div{
+    border: 2px solid rgba(255,124,124,0.5);
+    border-radius: 8px;
+    width: 25%;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main #service .services div :nth-child(2){
+    color: black;
+    font-size: 16px;
+    text-align: justify;
+    font-family: Brandon Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;   
+}
+
+main  #service .services div :nth-child(1){
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: black;
+}
+main  #service {
+    margin-bottom: 150px;
+}
+/*about */
+main .about{
+    margin-top:30px;
+    text-align: center;
+    margin-bottom: 110px;
+}
+#histoire{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+#histoire .txt_hist{
+    width: 400px;
+    font-family: Brandon Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;   
+}
+.historique :nth-child(1){
+    color: rgba(255,124,124);
+}
+
+#trophés{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+#trophés .txt_trophe{
+    width: 400px;
+    font-family: Brandon Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;   
+}
+.trophé :nth-child(1){
+    color: rgba(255,124,124);
+}
+
+main #team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+main #team #team_title{
+    display: grid;
+    grid-template-rows: 20%;
+    color: rgba(255,124,124);
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+main #team .stuff{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+main #team .stuff div ol li {
+    list-style: none; 
+}
+main #team .stuff div ol li i{
+    margin-top: 20px;
+    color: black;
+    
+}
+main #team .stuff div ol {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+main #team .stuff div img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    border-color: transparent;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+main #team .stuff div{
+    border:2px solid rgba(255,124,124);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding-top:40px;
+    padding-bottom:40px;
+    opacity: 0.9;
+}
+main #team .stuff div .names{
+    color: rgba(255,124,124);
+    font-size: 25px; 
+}
+main #team .stuff div .jobs{
+    color: black;
+    font-size: 18px;
+    font-family: Brandon Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;   
+}
+
+
+
+main #contact{
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+main #contact .fields{
+    grid-column: 1;
+    margin-left: 30px;
+}
+main #contact .icon{
+    grid-column: 2;
+}
+main #contact .fields #par{
+    margin-top: 50px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    font-family: "Old Japanese", sans-serif;
+
+}
+main #contact .fields .form {
+    margin-bottom: 25px;
+}
+main #contact .fields .form label{
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+main #contact .fields .form input{
+    width: 70%;
+    height: 30px;
+    border-color: #000000;
+    border-radius:8px;
+    border-width: 2px;
+}
+
+main #contact .fields .form textarea{
+    width: 70%;
+    border-color: #111D2C;
+    border-radius:8px;
+    border-width: 2px;
+}
+main #contact .fields .form button{
+    cursor: pointer;
+    background-color: #111D2C;
+    border:solid 0.5px #111D2C;
+    border-radius:8px;
+    color:white;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 70%;
+    font-family: "Old Japanese", sans-serif;
+}
+main #contact .fields .form button:hover{
+    cursor: pointer;
+    color: white;
+    background-color:rgba(255,124,124,0.5) ;
+}
+
+footer{
+    background-color: rgba(255,124,124,0.4);
+    height: max-content;
+}
+footer .footer_content{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-family: Brandon Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;   
+}
+.foot_about{
+    width: 400px;
+    margin-top:50px;
+}
+footer .foot_links ol li{
+    list-style: none;
+}
+footer .foot_social{
+    margin-top:50px;
+}
+footer .foot_links{
+    margin-top:50px;
+}
+footer .foot_social ol{
+    margin-top:10px;
+}
+.footer_titre{
+    color: white;
+    font-weight: bold;
+}
+footer .foot_links ol li a{
+    text-decoration: none;
+}
+footer .foot_social ol li{
+    list-style: none;
+    color: #000000;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+footer  .foot_social ol {
+    display: flex;
+}
+footer  .foot_social p {
+    color: white;
+    font-weight: bold;
+}
+footer .foot_links p{
+    color: white;
+    font-weight: bold;
+}
+
+footer .copy {
+    margin-top: 90px;
+    text-align: center;
+}
+
+/*carte*/
+
+.title_carte{
+    text-align: center;
+    margin: 30px;
+}
+.categorie ol{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #d6d2c9;
+    background-color:#d6d2c9 ;
+    padding: 20px 20px;
+    border-radius: 25px;
+}
+.categorie ol li{
+    list-style-type:none;
+    text-decoration: none;    
+}
+.categorie ol li a{
+    color: #000000;  
+}
+.categorie{
+    margin-left:20px;
+    margin-right:20px;
+}
+#tous{
+    color: white;
+    border: 1px solid black;
+    background-color: #000000;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+.menu{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.menu div{
+    margin-bottom: 50px;
+}
+.menu div div img{
+    height: 130px;
+    width: 130px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+.menu div div p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.menu div div button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+    border: 1px solid rgba(255,124,124);
+    border-radius: 10px;
+    background-color:rgba(255,124,124);
+    color: black;
+    cursor: pointer;
+    font-family: "Old Japanese", sans-serif;
+}
+.menu div div button:hover{
+    background-color: transparent;
+}
+
+
+
+
+@media (max-width: 700px) { 
+    /*nav */
+    nav ol li a .link{
+        display: none;
+    }
+    nav ol li a {
+        margin-left: 22px;
+    }
+    /*contact */
+    main #contact .icon{
+        display: none;
+    }
+    main #contact{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    main #contact .fields{
+        grid-row: 1;
+        margin-left: 25%;
+    }
+    /* about*/
+    #team_title ,#histoire{
+        align-items: center;
+    }
+    #histoire,#trophés{
+        display: flex;
+        flex-direction: column;
+    }
+    main #team .stuff{
+        display: flex;
+        flex-direction: column;
+    }
+    #trophés .pic_trophe{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .historique , .trophé{
+        text-align: center;
+    }
+    /* home */
+    .div1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .div1 .text{
+        font-size: 25px;
+    }
+    .div1 .content{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #bio {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #bio p{
+        font-size: 30px; 
+    }
+    #weAre{
+        margin-bottom: 10px;
+    }
+    #service .services{
+        display: flex;
+        flex-direction: column;
+    }
+    main  #service .services div{
+        border: 2px solid rgba(255,124,124,0.5);
+        border-radius: 8px;
+        width: 70%;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+    #partenaire .partenariat{
+        display: flex;
+        flex-direction: column;
+    }
+    #partenaire .partenariat div{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #top_plat {
+        display: none;  
+    }
+    /*footer*/
+    .footer_content{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_content{
+        display: flex;
+        flex-direction: column;
+    }
+    .foot_about {
+        text-align: center;
+        text-align: justify;
+        margin: auto auto;
+    }
+    .foot_links,.foot_social{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer_titre{
+        text-align: center;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .categorie {
+        display: flex;
+        justify-content: center;
+    }
+    .categorie ol{
+        display: inline-block;
+    }
+    .categorie ol li{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+}
+
+.non_valide{
+    width: 70%;
+    color: red;
+    margin-bottom: 20px;
+    font-family: Brandon Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;   
+}
+.valid{
+    width: 70%;
+    color: green;
+    margin-bottom: 20px;
+    font-family: Brandon Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;   
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: none;
+}
