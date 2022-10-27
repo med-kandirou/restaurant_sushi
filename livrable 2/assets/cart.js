@@ -62,17 +62,10 @@ function hide_element(element){
     element.classList.remove('show');
     element.classList.add('hide');
 }
-
 function show_element(element){
     element.classList.remove('hide');
     element.classList.add('show');
 }
-
-function show_element(element){
-    element.classList.remove('hide');
-    element.classList.add('show');
-}
-
 function focus(element){
     let cat=document.querySelectorAll(".categorie");
     for(let i=0;i<cat.length;i++){
@@ -80,7 +73,6 @@ function focus(element){
     }
     element.classList.add('border');
 }
-
 //links
 let tous=document.getElementById("tous");
 let sashimi=document.getElementById("sashimi");

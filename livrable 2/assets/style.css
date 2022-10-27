@@ -525,10 +525,6 @@ footer .copy {
 .menu div div button:hover{
     background-color: transparent;
 }
-
-
-
-
 @media (max-width: 700px) { 
     /*nav */
     nav ol li a .link{
@@ -689,4 +685,27 @@ footer .copy {
     display: block;
     display: flex;
     justify-content: space-around;
+}
+
+.command{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+}
+.pannier{
+    margin-top: 10px;
+    border: 2px solid rgba(255,124,124,0.5);
+    border-radius: 8px;
+    height: 300px;
+    width:  300px;
+}
+#pann{
+    text-align: center;
+}
+.total{
+    font-size: 20px;
+    margin-top: 30px;
+    height: 50px;
+    color: rgba(255,124,124);
+    text-align: center;
 }
