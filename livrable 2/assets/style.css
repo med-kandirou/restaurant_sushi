@@ -696,7 +696,7 @@ footer .copy {
     margin-top: 10px;
     border: 2px solid rgba(255,124,124,0.5);
     border-radius: 8px;
-    height: 300px;
+    height: max-content;
     width:  300px;
 }
 #pann{
@@ -708,4 +708,9 @@ footer .copy {
     height: 50px;
     color: rgba(255,124,124);
     text-align: center;
+}
+.achat{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }

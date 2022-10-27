@@ -3,64 +3,55 @@ let data=[
     {
         "id":"1",
         "img" : "sushi",
-        "nom" : "sashimi 1",
+        "nom" : "Sashimi 1",
         "prix" :"50",
-        "cat" :"1" 
     },
     {
         "id":"2",
         "img" : "sushi",
-        "nom" : "sashimi 2",
+        "nom" : "Sashimi 2",
         "prix" :"30",
-        "cat" :"1"
     },
     {
         "id":"3",
         "img" : "sushi",
-        "nom" : "sashimi 3",
+        "nom" : "Sashimi 3",
         "prix" :"30",
-        "cat" :"1"
     },
     {
         "id":"4",
         "img" : "plat1",
-        "nom" : "chirachi 1 ",
+        "nom" : "Chirachi 1 ",
         "prix" :"60",
-        "cat" :"2"
     },
     {
         "id":"5",
         "img" : "plat1",
-        "nom" : "chirachi 2",
+        "nom" : "Chirachi 2",
         "prix" :"20",
-        "cat" :"2"
     },
     {
         "id":"6",
         "img" : "plat1",
-        "nom" : "chirachi 3",
+        "nom" : "Nigiri 3",
         "prix" :"50",
-        "cat" :"2"
     },
     {
         "id":"7",
         "img" : "plat2",
-        "nom" : "chirachi 1",
+        "nom" : "Nigiri 1",
         "prix" :"100",
-        "cat" :"3"
     },{
         "id":"8",
         "img" : "plat2",
-        "nom" : "chirachi 2",
+        "nom" : "Nigiri 2",
         "prix" :"150",
-        "cat" :"3"
     },
     {
         "id":"9",
         "img" : "plat2",
-        "nom" : "chirachi 3",
+        "nom" : "Nigiri 3",
         "prix" :"70",
-        "cat" :"3"
     }
 ]
 ;
@@ -121,15 +112,17 @@ nigiri.addEventListener('click',function(){
 
 
 let btns=document.querySelectorAll('.btns');
-
 let pannier=document.getElementById('pannier');
-
+let total=document.getElementById('prixTotal');
+let count=00;
 btns.forEach((btn)=>{
-    btn.addEventListener('click',function(){
-        let id=this.value;
+    btn.addEventListener('click',()=>{
+        let id=btn.value;
         for(let i=0;i<data.length;i++){
             if(data[i].id==id){
-                pannier.innerHTML+=data[i].id+" "+data[i].nom+" "+data[i].prix +"<br>";
+                pannier.innerHTML+='<div class="achat"><img src="images/'+data[i].img+'.png" width=70 height=70><div><p>'+data[i].nom+'</p><p>'+data[i].prix+'</p></div></div>';
+                count+=parseInt(data[i].prix);
+                total.innerHTML=count+' DH';
             }
         }
     })
