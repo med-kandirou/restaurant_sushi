@@ -2,56 +2,64 @@
 let data=[
     {
         "id":"1",
-        "img" : "img1",
-        "nom" : "nom1",
+        "img" : "sushi",
+        "nom" : "sashimi 1",
         "prix" :"50",
         "cat" :"1" 
     },
     {
-        "img" : "img2",
-        "nom" : "nom1",
+        "id":"2",
+        "img" : "sushi",
+        "nom" : "sashimi 2",
         "prix" :"30",
         "cat" :"1"
     },
     {
-        "img" : "img3",
-        "nom" : "nom1",
+        "id":"3",
+        "img" : "sushi",
+        "nom" : "sashimi 3",
         "prix" :"30",
         "cat" :"1"
     },
     {
+        "id":"4",
         "img" : "plat1",
-        "nom" : "nom1",
-        "prix" :"30",
+        "nom" : "chirachi 1 ",
+        "prix" :"60",
         "cat" :"2"
     },
     {
+        "id":"5",
         "img" : "plat1",
-        "nom" : "nom1",
-        "prix" :"30",
+        "nom" : "chirachi 2",
+        "prix" :"20",
         "cat" :"2"
     },
     {
+        "id":"6",
         "img" : "plat1",
-        "nom" : "nom1",
-        "prix" :"30",
+        "nom" : "chirachi 3",
+        "prix" :"50",
         "cat" :"2"
     },
     {
-        "img" : "plat1",
-        "nom" : "nom1",
-        "prix" :"30",
+        "id":"7",
+        "img" : "plat2",
+        "nom" : "chirachi 1",
+        "prix" :"100",
         "cat" :"3"
     },{
-        "img" : "plat1",
-        "nom" : "nom1",
-        "prix" :"30",
+        "id":"8",
+        "img" : "plat2",
+        "nom" : "chirachi 2",
+        "prix" :"150",
         "cat" :"3"
     },
     {
-        "img" : "plat1",
-        "nom" : "nom1",
-        "prix" :"50",
+        "id":"9",
+        "img" : "plat2",
+        "nom" : "chirachi 3",
+        "prix" :"70",
         "cat" :"3"
     }
 ]
@@ -110,3 +118,5 @@ nigiri.addEventListener('click',function(){
     hide_element(div_sashimi);
     focus(nigiri);
 })
+
+
