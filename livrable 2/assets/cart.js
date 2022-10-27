@@ -5,7 +5,7 @@ let data=[
         "img" : "img1",
         "nom" : "nom1",
         "prix" :"50",
-        "cat" :"1"
+        "cat" :"1" 
     },
     {
         "img" : "img2",
