@@ -120,7 +120,7 @@ btns.forEach((btn)=>{
         let id=btn.value;
         for(let i=0;i<data.length;i++){
             if(data[i].id==id){
-                pannier.innerHTML+='<div class="achat"><img src="images/'+data[i].img+'.png" width=70 height=70><div><p>'+data[i].nom+'</p><p>'+data[i].prix+'</p></div></div>';
+                pannier.innerHTML+='<div class="achat"><img src="images/'+data[i].img+'.png" width=70 height=70><div><p>'+data[i].nom+'</p><p>'+data[i].prix+' DH</p></div></div>';
                 count+=parseInt(data[i].prix);
                 total.innerHTML=count+' DH';
             }
