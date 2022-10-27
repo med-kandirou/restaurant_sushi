@@ -120,10 +120,31 @@ btns.forEach((btn)=>{
         let id=btn.value;
         for(let i=0;i<data.length;i++){
             if(data[i].id==id){
-                pannier.innerHTML+='<div class="achat"><img src="images/'+data[i].img+'.png" width=70 height=70><div><p>'+data[i].nom+'</p><p>'+data[i].prix+' DH</p></div></div>';
+                pannier.innerHTML+='<div class="achat"><img src="images/'+data[i].img+'.png" width=70 height=70><div><p>'+data[i].nom+'</p><p>'+data[i].prix+' DH</p></div><button class="remove" value='+data[i].id+'><i class="fa fa-close" style="color:red"></i></button></div>';
                 count+=parseInt(data[i].prix);
                 total.innerHTML=count+' DH';
             }
         }
     })
 })
+
+// let prix_reduit=0;
+// setInterval(function(){
+//     let remove=document.querySelectorAll('.remove');
+//     remove.forEach((item)=>{
+//         item.addEventListener('click',()=>{
+//             for(let i=0;i<data.length;i++){
+//                 if(data[i].id==item.value){
+//                     prix_reduit=parseInt(data[i].prix);
+//                     count=count-prix_reduit;
+//                     total.innerHTML=count+' DH';
+//                     console.log(count);
+//                 }
+//             }
+//             item.parentElement.remove();    
+//         })
+//     })
+    
+// },1000);
+
+
