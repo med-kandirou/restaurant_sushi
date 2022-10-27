@@ -471,6 +471,20 @@ footer .copy {
 
 .menu{
     margin-top: 50px;
+    display: flex calc(90%/3);
+}
+.sashimi{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.chirachi{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.nigiri{
+    margin-top: 50px;
     display: flex;
     justify-content: space-around;
 }
@@ -623,7 +637,15 @@ footer .copy {
     .footer_titre{
         text-align: center;
     }
-    .menu{
+    .chirachi{
+        display: flex;
+        flex-direction: column;
+    }
+    .sashimi{
+        display: flex;
+        flex-direction: column;
+    }
+    .nigiri{
         display: flex;
         flex-direction: column;
     }
@@ -659,4 +681,6 @@ footer .copy {
 }
 .show{
     display: block;
+    display: flex;
+    justify-content: space-around;
 }
