@@ -120,3 +120,17 @@ nigiri.addEventListener('click',function(){
 })
 
 
+let btns=document.querySelectorAll('.btns');
+
+let pannier=document.getElementById('pannier');
+
+btns.forEach((btn)=>{
+    btn.addEventListener('click',function(){
+        let id=this.value;
+        for(let i=0;i<data.length;i++){
+            if(data[i].id==id){
+                pannier.innerHTML+=data[i].id+" "+data[i].nom+" "+data[i].prix +"<br>";
+            }
+        }
+    })
+})

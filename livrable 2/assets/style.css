@@ -692,7 +692,7 @@ footer .copy {
     margin-right: auto;
     margin-bottom: 70px;
 }
-.pannier{
+#pannier{
     margin-top: 10px;
     border: 2px solid rgba(255,124,124,0.5);
     border-radius: 8px;
