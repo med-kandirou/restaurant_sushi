@@ -399,31 +399,37 @@ footer .foot_links ol li{
 }
 footer .foot_social{
     margin-top:50px;
+
 }
 footer .foot_links{
     margin-top:50px;
 }
 footer .foot_social ol{
     margin-top:10px;
+
 }
 .footer_titre{
     color: white;
     font-weight: bold;
 }
 footer .foot_links ol li a{
-    text-decoration: none;
+    color: black;
 }
 footer .foot_social ol li{
     list-style: none;
-    color: #000000;
     border: 1px solid black;
     border-radius: 100px;
     padding: 7px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-right: 10px;
 }
 footer  .foot_social ol {
     display: flex;
+    color: #000000;
+}
+footer  .foot_social ol li a i{
+    color: #000000;
 }
 footer  .foot_social p {
     color: white;
