@@ -127,7 +127,6 @@ btns.forEach((btn)=>{
         }
     })
 })
-
 // let prix_reduit=0;
 // setInterval(function(){
 //     let remove=document.querySelectorAll('.remove');
