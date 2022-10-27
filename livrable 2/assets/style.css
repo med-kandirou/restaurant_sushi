@@ -440,7 +440,11 @@ footer .copy {
 }
 
 /*carte*/
-
+.border{
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 15px;
+}
 .title_carte{
     text-align: center;
     margin: 30px;
@@ -463,13 +467,6 @@ footer .copy {
 .categorie{
     margin-left:20px;
     margin-right:20px;
-}
-#tous{
-    color: white;
-    border: 1px solid black;
-    background-color: #000000;
-    padding: 8px;
-    border-radius: 15px;
 }
 
 .menu{
@@ -661,5 +658,5 @@ footer .copy {
     display: none;
 }
 .show{
-    display: none;
+    display: block;
 }
