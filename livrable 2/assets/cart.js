@@ -55,7 +55,6 @@ let data=[
     }
 ]
 ;
-
 //fonctions
 function hide_element(element){
     element.classList.remove('show');
@@ -125,25 +124,23 @@ btns.forEach((btn)=>{
                 total.innerHTML=count+' DH';
             }
         }
+        let remove=document.querySelectorAll('.remove');
+        remove.forEach((item)=>{
+            item.addEventListener('click',()=>{
+                for(let i=0;i<data.length;i++){
+                    if(data[i].id==item.value){
+                        prix_reduit=parseInt(data[i].prix);
+                        count=count-prix_reduit;
+                        total.innerHTML=count+' DH';
+                    }
+                }
+                item.parentElement.remove();    
+            })
+        })
     })
 })
-// let prix_reduit=0;
-// setInterval(function(){
-//     let remove=document.querySelectorAll('.remove');
-//     remove.forEach((item)=>{
-//         item.addEventListener('click',()=>{
-//             for(let i=0;i<data.length;i++){
-//                 if(data[i].id==item.value){
-//                     prix_reduit=parseInt(data[i].prix);
-//                     count=count-prix_reduit;
-//                     total.innerHTML=count+' DH';
-//                     console.log(count);
-//                 }
-//             }
-//             item.parentElement.remove();    
-//         })
-//     })
-    
-// },1000);
 
+
+    
+    
 
