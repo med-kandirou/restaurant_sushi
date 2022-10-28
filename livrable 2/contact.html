@@ -83,33 +83,6 @@
             <p class="copy">Copyright © 2022 Sushi. All rights reserved.</p>
         </footer>
     </main>
-    <script>
-        let nom=document.getElementById("nom");
-        let prenom=document.getElementById("prenom");
-        let phone=document.getElementById("Phone");
-        let email=document.getElementById("email");
-        let msg=document.getElementById("msg");
-        submit=document.getElementById("submit");
-        var feed_back=document.getElementById("feed_back");
-        feed_back.style.display="none";
-        submit.addEventListener('click',function(){
-            feed_back.style.display="block";
-            if(nom.value=="" || prenom.value=="" || phone.value=="" || email.value=="" || msg.value==""){
-                feed_back.innerText="Oops! Il faut saisir tous les champs";
-                feed_back.classList.remove("valid"); 
-                feed_back.classList.add("non_valide"); 
-            }
-            else{
-                feed_back.classList.remove("non_valide"); 
-                feed_back.classList.add("valid"); 
-                feed_back.innerText="Merci pour votre feed-back";
-                nom.value="";
-                prenom.value="";
-                phone.value="";
-                email.value="";
-                msg.value="";
-            }
-        });
-    </script>
+<script src="assets/contact.js"></script>
 </body>
 </html>
