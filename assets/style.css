@@ -725,3 +725,15 @@ footer .copy {
     justify-content: space-around;
     align-items: center;
 }
+
+#reset{
+    text-align:center;
+    color:rgba(255,124,124);
+    cursor: pointer;
+    border: 1px solid rgba(255,124,124);
+    padding: 10px;
+}
+#reset:hover{
+    background-color:rgba(255,124,124);
+    color: white;
+}

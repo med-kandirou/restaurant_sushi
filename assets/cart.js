@@ -140,4 +140,8 @@ btns.forEach((btn)=>{
 })
 
     
+var reset=document.getElementById("reset");
+reset.addEventListener("click",function(){
+    pannier.innerHTML='';
+});
 
