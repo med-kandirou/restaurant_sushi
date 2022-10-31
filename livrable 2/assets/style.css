@@ -74,10 +74,14 @@ main {
     padding: 10px;
     cursor: pointer;
     margin-right: 20px;
+    font-family: Brandon Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;   
+    font-weight: bold;
 }
 .lien .how{
     color:rgba(255,124,124);
     cursor: pointer;
+    font-family: Brandon Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;   
+    font-weight: bold;
 }
 #bio{
     margin-top: 8%;
@@ -468,7 +472,10 @@ footer .copy {
     text-decoration: none;    
 }
 .categorie ol li a{
+    font-family: Brandon Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;   
     color: #000000;  
+    text-decoration: none;
+    font-weight: bold;
 }
 .categorie{
     margin-left:20px;
@@ -506,10 +513,11 @@ footer .copy {
     margin-bottom: 10px;
 }
 .menu div div p{
+    font-family: Brandon Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;   
+    font-weight: bold;
     text-align: center;
     margin-bottom: 10px;
 }
-
 .menu div div button{
     display: block;
     margin-left: auto;
@@ -520,7 +528,8 @@ footer .copy {
     background-color:rgba(255,124,124);
     color: black;
     cursor: pointer;
-    font-family: "Old Japanese", sans-serif;
+    font-family: Brandon Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;   
+    font-weight: bold;
 }
 .menu div div button:hover{
     background-color: transparent;
