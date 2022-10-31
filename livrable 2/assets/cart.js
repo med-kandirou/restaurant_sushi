@@ -64,13 +64,16 @@ function show_element(element){
     element.classList.remove('hide');
     element.classList.add('show');
 }
-function focus(element){
-    let cat=document.querySelectorAll(".categorie");
-    for(let i=0;i<cat.length;i++){
-        cat[i].classList.remove('border');
-    }
-    element.classList.add('border');
-}
+let items=document.querySelectorAll(".item");
+items.forEach(item=>{
+    item.addEventListener('click',function(){
+        //nav focus
+        for(let i=0;i<items.length;i++){
+            items[i].classList.remove('border');
+        }
+        item.classList.add('border'); 
+    })
+});
 //links
 let tous=document.getElementById("tous");
 let sashimi=document.getElementById("sashimi");
@@ -88,27 +91,23 @@ tous.addEventListener('click',function(){
     show_element(div_sashimi);
     show_element(div_chirachi);
     show_element(div_nigiri);
-    focus(tous);
 })
 sashimi.addEventListener('click',function(){
     show_element(div_sashimi);
     hide_element(div_chirachi);
     hide_element(div_nigiri);
-    focus(sashimi);
 })
 chirachi.addEventListener('click',function(){
     show_element(div_chirachi);
     hide_element(div_sashimi);
     hide_element(div_nigiri);
-    focus(chirachi);
+    
 })
 nigiri.addEventListener('click',function(){
     show_element(div_nigiri);
     hide_element(div_chirachi);
     hide_element(div_sashimi);
-    focus(nigiri);
 })
-
 
 let btns=document.querySelectorAll('.btns');
 let pannier=document.getElementById('pannier');
