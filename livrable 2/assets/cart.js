@@ -21,7 +21,7 @@ let data=[
     {
         "id":"4",
         "img" : "plat1",
-        "nom" : "Chirachi 1 ",
+        "nom" : "Chirachi 1",
         "prix" :"60",
     },
     {
