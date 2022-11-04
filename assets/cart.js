@@ -145,8 +145,8 @@ reset.addEventListener("click",function(){
     total.innerHTML='0 DH';
 });
 
-var reset=document.getElementById("submit");
-reset.addEventListener("click",function(){
+var submit=document.getElementById("submit");
+submit.addEventListener("click",function(){
     pannier.innerHTML='';
     total.innerHTML='0 DH';
     alert("demmande envoyé");
