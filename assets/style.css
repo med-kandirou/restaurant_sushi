@@ -726,7 +726,11 @@ footer .copy {
     align-items: center;
 }
 
-#reset{
+#submit{
+    margin-bottom: 20px;
+}
+
+#reset,#submit{
     text-align:center;
     color:rgba(255,124,124);
     cursor: pointer;
@@ -734,6 +738,10 @@ footer .copy {
     padding: 10px;
 }
 #reset:hover{
+    background-color:rgba(255,124,124);
+    color: white;
+}
+#submit:hover{
     background-color:rgba(255,124,124);
     color: white;
 }
