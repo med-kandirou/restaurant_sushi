@@ -16,7 +16,7 @@ body{
 nav{
     grid-column: 1;
     min-width: 15%;
-    min-height: 100vh;
+    min-height: 100%;
     background-color: #ffffff;
     position: fixed;
     grid-template-rows: repeat(10,1fr);
