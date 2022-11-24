@@ -552,7 +552,7 @@ footer .copy {
     }
     main #contact .fields{
         grid-row: 1;
-        margin-left: 25%;
+        margin-left: 15%;
     }
     /* about*/
     #team_title ,#histoire{
@@ -630,10 +630,7 @@ footer .copy {
     .footer_content{
         display: flex;
         flex-direction: column;
-    }
-    .footer_content{
-        display: flex;
-        flex-direction: column;
+        width: 85%;
     }
     .foot_about {
         text-align: center;
@@ -670,6 +667,10 @@ footer .copy {
     .categorie ol li{
         margin-bottom: 20px;
         text-align: center;
+    }
+    #pannier{
+        height: 170px;
+        width:  150px;
     }
 }
 
