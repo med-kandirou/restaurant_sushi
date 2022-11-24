@@ -627,6 +627,10 @@ footer .copy {
         display: none;  
     }
     /*footer*/
+    footer {
+        display: grid;
+        place-items: center;
+    }
     .footer_content{
         display: flex;
         flex-direction: column;
@@ -634,8 +638,8 @@ footer .copy {
     }
     .foot_about {
         text-align: center;
-        text-align: justify;
         margin: auto auto;
+        width: calc(100% - 15%);
     }
     .foot_links,.foot_social{
         display: block;
@@ -643,6 +647,9 @@ footer .copy {
         margin-right: auto;
     }
     .footer_titre{
+        text-align: center;
+    }
+    .foot_social p {
         text-align: center;
     }
     .chirachi{
