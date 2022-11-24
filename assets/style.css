@@ -638,8 +638,15 @@ footer .copy {
     }
     .foot_about {
         text-align: center;
-        margin: auto auto;
+        margin: auto;
         width: calc(100% - 15%);
+    }
+    footer .foot_links {
+        margin-top: 20px;
+    }
+    footer .copy {
+        margin: 1rem 0;
+        text-align: center;
     }
     .foot_links,.foot_social{
         display: block;
@@ -648,6 +655,7 @@ footer .copy {
     }
     .footer_titre{
         text-align: center;
+        margin-top: 1rem;
     }
     .foot_social p {
         text-align: center;
@@ -679,6 +687,7 @@ footer .copy {
         height: 170px;
         width:  150px;
     }
+
 }
 
 .non_valide{
