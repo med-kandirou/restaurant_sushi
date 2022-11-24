@@ -387,6 +387,8 @@ main #contact .fields .form button:hover{
 footer{
     background-color: rgba(255,124,124,0.4);
     height: max-content;
+    display: grid;
+    place-items: center;
 }
 footer .footer_content{
     display: flex;
@@ -437,11 +439,13 @@ footer  .foot_social ol li a i{
 }
 footer  .foot_social p {
     color: white;
+    text-align: center;
     font-weight: bold;
 }
 footer .foot_links p{
     color: white;
     font-weight: bold;
+    text-align: center;
 }
 
 footer .copy {
@@ -634,8 +638,9 @@ footer .copy {
     }
     .foot_about {
         text-align: center;
-        text-align: justify;
+        /* text-align: justify; */
         margin: auto auto;
+        width: calc(100% - 15%);
     }
     .foot_links,.foot_social{
         display: block;
