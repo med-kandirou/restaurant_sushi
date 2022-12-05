@@ -574,6 +574,12 @@ footer .copy {
     .historique , .trophé{
         text-align: center;
     }
+    #histoire .txt_hist{
+        width: 300px;
+    }
+    #trophés .txt_trophe{
+        width: 350px;
+    }
     /* home */
     .div1{
         display: flex;
